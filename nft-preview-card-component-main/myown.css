@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+    /*### Primary*/
+
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+/*### Neutral*/
+
+--main-BG: hsl(217, 54%, 11%);
+--card-BG: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    font-family: "outfit", "sans-serif";
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  
+  main{
+      background-color: var(--main-BG);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+  }
+  
+  .card{
+      background-color: var(--card-BG);
+      border-radius: 20px;
+      padding:25px;
+      width: 320px;
+      height: 400;
+    }
+  
+  .img-box{
+      height: 290px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 8px;
+      
+  }
+  .image{
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+
+
+.img-box:hover::before,
+.img-box:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.img-box:hover::before {
+  background-color: var(--Cyan);
+  opacity: 50%;
+}
+
+  .img-box:hover::after{
+    background: url(images/icon-view.svg) center no-repeat;
+  }
+  
+  
+
+  .div2 h3{
+    color: var(--White);
+    padding: 6px 0 10px 0;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.div2{
+    margin-top: 15px;
+}
+
+
+.div2 p{
+    color: var(--White);
+    padding: 5px 0 15px 0;
+    font-size: 16px;
+    color: var(--Soft-blue);
+    font-weight: 50;
+}
+
+.div3{
+    display: flex;
+    padding: 5px 0 25px 0;
+    justify-content: space-between;
+}
+
+.sec1{
+    display: flex;
+    align-items: center;
+}
+
+.sec1 small{
+    color: var(--Cyan);
+    font-weight: 600;
+
+}
+
+
+.sec2{
+    display: flex;
+    align-items: center;
+}
+
+.sec2 small{
+    color: var(--Soft-blue);
+}
+
+#line{
+    border: solid var(--line) 0.1px;
+    
+}
+
+.div4{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+.avater{
+    width: 10%;
+    border: var(--White) solid 1px;
+    border-radius: 50%;
+}
+
+
+.div4 small{
+    margin-left: 15px;
+    color: var(--Soft-blue);
+    font-size: 14px;
+}
+
+span{
+    color: var(--White);
+}
+
+span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.eq:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+
+}
